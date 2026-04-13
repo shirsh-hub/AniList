@@ -88,7 +88,7 @@ async function searchAnime(query) {
   setStatus(`Searching for "${trimmedQuery}"...`);
 
   try {
-    const response = await fetch(`${API_URL}?q=${encodeURIComponent(trimmedQuery)}&limit=12`);
+    const response = await fetch(`${API_URL}?q=${encodeURIComponent(trimmedQuery)}&limit=24`);
 
     if (!response.ok) {
       throw new Error(`Request failed with status ${response.status}`);
